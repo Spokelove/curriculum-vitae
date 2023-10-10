@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset default margin and padding for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fallback background color */
+            background-image: url('/b.jpg');
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            background-size: cover; /* Adjust the size to cover the entire element */
+            /* You can also use 'background-size: contain;' if you want to fit the image within the element */
+        }
+
+        /* Container for the user profile */
+        .profile-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+            text-align: center;
+        }
+
+        /* User profile image */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto; /* Center the image horizontally */
+            display: block;
+            margin-top: 20px; /* Add some top margin */
+            border: 5px solid rgb(74, 74, 234); /* Add a blue border */
+        }
+
+        /* Horizontal line under the profile image */
+        hr.header-line {
+            background-color: #2b7cd3;
+            height: 2px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        /* Main heading for the user profile */
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: rgb(10, 41, 95);
+        }
+
+        /* Secondary headings for profile sections */
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: left;
+            color: blue;
+        }
+
+        /* Unordered list for displaying user information */
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        /* List items for user information */
+        li {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Styling for the labels */
+        .label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px; /* Adjust the width as needed */
+            margin-right: 10px; /* Add some right margin for spacing */
+            text-align: right; /* Align the labels to the right */
+        }
+
+        /* Container for buttons */
+        .button-container {
+            text-align: center;
+        }
+
+        /* Styling for buttons */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #2b7cd3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #1f5aa8;
+        }
+
+        /* Styling for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        /* Table headers */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Background color for table headers */
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Style for the small text */
+        .small-text {
+            font-size: 14px; /* Adjust the font size as needed */
+            margin-left: 10px; /* Add left margin for spacing */
+        }
+
+        .social-icons {
+            text-align: center; /* Center the icons horizontally */
+            margin-top: 20px; /* Add some top margin */
+        }
+
+        .social-icon {
+            font-size: 24px; /* Adjust the icon size as needed */
+            margin: 0 10px; /* Add spacing between the icons */
+            color: #048d4b; /* Set the color for Facebook icon */
+        }
+
+        .social-icon:hover {
+            color: #E4405F; /* Change the color on hover */
+        }
+    </style>
+</head>
+<body>
+      <nav class="banner"></nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="profile-container">
+        <img class="profile-image" src="/me.jpg" alt="User Profile Picture">
+        <h1>Phoebe B. Rayos <span class="small-text">(Web Developer)</span></h1>
+
+        <!-- Navigation buttons for profile sections -->
+        <div class="button-container">
+            <a href="#c1" class="button">Personal Information</a>
+            <a href="#c2" class="button">Educational Background</a>
+            <a href="#c3" class="button">Work Experience</a>
+            <a href="#c4" class="button">Skills</a>
+        </div>
+
+        <!-- Personal Information section -->
+        <div>
+            <hr class="header-line">
+            <h2 id="c1">Personal Information</h2>
+            <ul>
+                <li><span class="label">Nationality:</span> Filipino</li>
+                <li><span class="label">Gender:</span> Female</li>
+                <li><span class="label">Marital status:</span> Single</li>
+                <li><span class="label">Date of Birth:</span> February 01, 1985</li>
+                <li><span class="label">Place of Birth:</span> Poblacion, Valencia City, Bukidnon</li>
+                <li><span class="label">Language:</span> Bisaya, Ilongga, English, Tagalog</li>
+            </ul>
+        </div>
+
+        <!-- Educational Background section -->
+        <div>
+            <hr class="header-line">
+            <h2 id="c2">Educational Background</h2>
+            <ul>
+                <li><span class="label">Liceo University:</span> Masteral in Management Major in Information Technology Management (on-going)</li>
+                <li><span class="label">AMA College:</span> Bachelor's in Information Technology</li>
+                <li><span class="label">AMA College:</span> Computer Design and Programming</li>
+                <li><span class="label">High School:</span> Valencia National High School</li>
+                <li><span class="label">Elementary:</span> Valencia Central Elementary School</li>
+            </ul>
+        </div>
+
+        <!-- Work Experience section -->
+        <div>
+            <hr class="header-line">
+            <h2 id="c3">Work Experience</h2>
+            <ul>
+                <li><span class="label">Present:</span> Administrative Aide 3</li>
+                <li><span class="label">2017:</span> Field Inspector</li>
+                <li><span class="label">2013:</span> Farmer</li>
+            </ul>
+        </div>
+
+        <!-- Skills section -->
+        <div>
+            <hr class="header-line">
+            <h2 id="c4">Skills</h2>
+            <ul>
+                <li><span class="label">Driving:</span> Motorcycle</li>
+                <li><span class="label">Graphics:</span> Photoshop</li>
+                <li><span class="label">Programming:</span> Laravel 9</li>
+                <li><span class="label">Web:</span> HTML</li>
+                <li><span class="label">Web:</span> CSS</li>
+                <li><span class="label">Web:</span> Tailwind</li>
+            </ul>
+        </div>
+
+        <hr class="header-line">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:your.email@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+</html>
