@@ -11,11 +11,27 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* Fallback background color */
-            background-image: url('/b.jpg');
+           
+            /* background-image: url('/bi.jpg'); */
             background-repeat: no-repeat; /* Prevent image from repeating */
             background-size: cover; /* Adjust the size to cover the entire element */
             /* You can also use 'background-size: contain;' if you want to fit the image within the element */
+        }
+
+        /* Styles for navigation */
+        .banner {
+            text-align: center;
+            background-color: #2b7cd3;
+            padding: 10px 0;
+        }
+
+        .nav-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
         }
 
         /* Container for the user profile */
@@ -147,31 +163,64 @@
         .social-icon:hover {
             color: #E4405F; /* Change the color on hover */
         }
+        /* Style for the navigation menu */
+.banner {
+    background-color: #2b7cd3;
+    text-align: center;
+    padding: 10px 0;
+     background-image: url('/b.jpg');
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #1f5aa8;
+    border-radius: 10px; 
+}
+
     </style>
 </head>
 <body>
-      <nav class="banner"></nav>
-
-
-
-
-
-
-
-
-
-
+    <nav class="banner">
+ 
+        <button class="nav-button"><a href="#c1" class="button">Personal Information</a></button>
+        <button class="nav-button"><a href="#c2" class="button">Educational Background</a></button>
+        <button class="nav-button"><a href="#c3" class="button">Work Experience</a></button>
+        <button class="nav-button"><a href="#c4" class="button">Skills</a></button>
+    </nav>
+    
     <div class="profile-container">
         <img class="profile-image" src="/me.jpg" alt="User Profile Picture">
-        <h1>Phoebe B. Rayos <span class="small-text">(Web Developer)</span></h1>
+        <h1>Phoebe B. Rayos <span class="small-text">( Web Developer )</span></h1>
+
+
+
+
+   
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:your.email@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    
+
 
         <!-- Navigation buttons for profile sections -->
-        <div class="button-container">
+        <!-- <div class="button-container">
             <a href="#c1" class="button">Personal Information</a>
             <a href="#c2" class="button">Educational Background</a>
             <a href="#c3" class="button">Work Experience</a>
             <a href="#c4" class="button">Skills</a>
-        </div>
+        </div> -->
 
         <!-- Personal Information section -->
         <div>
@@ -219,18 +268,17 @@
                 <li><span class="label">Driving:</span> Motorcycle</li>
                 <li><span class="label">Graphics:</span> Photoshop</li>
                 <li><span class="label">Programming:</span> Laravel 9</li>
-                <li><span class="label">Web:</span> HTML</li>
-                <li><span class="label">Web:</span> CSS</li>
-                <li><span class="label">Web:</span> Tailwind</li>
+                <li><span class="label">Web:</span> HTML,CSS,Tailwind</li>
+                
             </ul>
         </div>
 
         <hr class="header-line">
-        <div class="social-icons">
+        <!-- <div class="social-icons">
             <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="mailto:your.email@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
